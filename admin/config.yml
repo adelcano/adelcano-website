@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets/images"
+public_folder: "/assets/images"
+collections:
+  - name: "content"
+    label: "Website Content"
+    editor:
+      preview: false
+    files:
+      - name: "main"
+        label: "Homepage Text"
+        file: "index.html"
+        editor:
+          preview: true
+        fields:
+          - { name: "philosophy", label: "Teaching Philosophy", widget: "string", required: true }
+          - { name: "academic", label: "Academic Background", widget: "string", required: true }
+          - { name: "history", label: "Professional History", widget: "string", required: true }
+          - { name: "specializations", label: "Specializations", widget: "string", required: true }
+          - { name: "private", label: "Private Tutoring Description", widget: "string", required: true }
+          - { name: "corporate", label: "Corporate Training Description", widget: "string", required: true }
